@@ -1,0 +1,17 @@
+CREATE SCHEMA `examenfinaljavaweb` ;
+
+CREATE TABLE `examenfinaljavaweb`.`book` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(350) NOT NULL,
+  `author` VARCHAR(350) NOT NULL,
+  `publisher` VARCHAR(350) NOT NULL,
+  `publisherYear` INT UNSIGNED NOT NULL,
+  PRIMARY KEY (`id`));
+ALTER TABLE `examenfinaljavaweb`.`book` 
+CHANGE COLUMN `publisherYear` `publishingYear` INT UNSIGNED NOT NULL ;
+ALTER TABLE `examenfinaljavaweb`.`book` 
+CHANGE COLUMN `publisher` `publisher` VARCHAR(250) NOT NULL;
+ALTER TABLE `examenfinaljavaweb`.`book` 
+CHANGE COLUMN `publishingYear` `publishingYear` INT UNSIGNED NULL;
+ALTER TABLE `examenfinaljavaweb`.`book` 
+RENAME TO  `examenfinaljavaweb`.`books` ;
