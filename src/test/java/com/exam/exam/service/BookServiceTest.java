@@ -48,7 +48,7 @@ class BookServiceTest {
 
     @Test
     @DisplayName("The same book")
-    void createDriverThrowsException() {
+    void addbookThrowsException() {
         Book book = new Book("ExamenJava", "Stefan", "Universitate",2010);
         Book addedBook = new Book(1,"ExamenJava", "Stefan", "Universitate",2010);
         when(bookRepo.getbythis(any(),any(),anyInt())).thenReturn(Optional.of(addedBook));
