@@ -1,4 +1,4 @@
-# LibraryApp
+# LibraryApp, using Spring, MySQL, JDBC, Mockito.
 I implemented the back end system of an simple application used in a library.
 For this app we implemented the following endpoints:
  - add a book – allowsa user to add a new book, but if there is already a book with the same title,publisher and publishingYear, we will receive a message.
